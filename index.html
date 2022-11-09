@@ -2,14 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Udemy - Ghost Rain</title>
+    <title>Ghost Rain - 유령을 잡아라</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav>Ghost Rain</nav>
+    <div id="intro_container">
+      <h3 style="margin-bottom: 0">게임 설명</h3>
+      <p style="margin-top: 5px; text-align: center">
+        주어진 시간동안 용사를 움직여 <br />
+        비처럼 떨어지는 유령들을 죽이시오.
+      </p>
+      <button onclick="gameStart()" id="startButton">게임 시작하기</button>
+    </div>
+    <div class="invisible" id="timeBox">
+      <div id="time">Time Remaining:</div>
+    </div>
     <div id="bg">
       <span id="hero"></span>
     </div>
 
+    <script src="js/footer.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/ghost.js"></script>
     <script src="js/hero.js"></script>
