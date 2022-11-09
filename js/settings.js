@@ -6,3 +6,10 @@ const GHOST_HEIGHT = 54;
 
 const HERO_WIDTH = 35;
 const HERO_HEIGHT = 54;
+
+const bg = document.getElementById("bg");
+const heroElement = document.getElementById("hero");
+
+let countGhostCreated = 0;
+let countDeath = 0;
+let countMissed = 0;
